@@ -441,7 +441,7 @@
 
                 addMessageToChat('ai', responseText);
             } catch (error) {
-                addMessageToChat('ai', `Erreur : Impossible de joindre le serveur. Vérifiez que node server.js tourne sur le port 8081.\n\nDétails : ${error.message}`);
+                addMessageToChat('ai', `Erreur : Impossible de joindre le serveur.\n\nDétails : ${error.message}`);
             } finally {
                 loadingIndicator.style.display = 'none';
             }
@@ -468,3 +468,4 @@
 </body>
 
 </html>
+
