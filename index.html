@@ -434,7 +434,7 @@
             loadingIndicator.style.display = 'block';
 
             try {
-                const serverUrl = `http://localhost:8081/chat?query=${encodeURIComponent(query)}`;
+                const serverUrl = `https://server-chatbot-1.onrender.com/chat?query=${encodeURIComponent(query)}`;
                 const response = await fetch(serverUrl);
                 if (!response.ok) throw new Error(`Statut : ${response.status}`);
                 const responseText = await response.text();
@@ -466,4 +466,5 @@
     </script>
 
 </body>
+
 </html>
